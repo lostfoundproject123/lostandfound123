@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Lost Item</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Report Lost Item</h1>
+    <a href="index.html" class="back-link">← Back</a>
+  </header>
+
+  <main>
+    <form id="lostForm" class="form-card">
+      <label>Item Title</label>
+      <input type="text" id="title" required>
+
+      <label>Description</label>
+      <textarea id="description" required></textarea>
+
+      <label>Location</label>
+      <input type="text" id="location" required>
+
+      <label>Date Lost</label>
+      <input type="date" id="date" required>
+
+      <label>Upload Image</label>
+      <input type="file" id="image" accept="image/*">
+      <img id="preview" src="images/placeholder.png" alt="Preview" class="preview-img">
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </main>
+
+  <script src="js/lostForm.js"></script>
+</body>
+</html>
